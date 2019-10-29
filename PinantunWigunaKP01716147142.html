@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.li {
+  position: fixed;
+  padding-top: 18%;
+  Width:165px;
+  Height:16px;
+
+
+}
+.li a  {
+  display: block;
+  color: #ff0000;
+  padding: 19px 20px;
+  text-decoration: none;
+  font-style: oblique;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #0d0d0d;
+  background: rgba(0, 0, 0, 0.5);
+  color: red;
+  Width:165px;
+  Height:16px;
+  transition-property: width;
+  transition-duration: 2s;
+
+}
+.li a:hover {
+  background-color: #e6e6e6;
+  color: red;
+  Width:105px;
+
+}
+
+.gambar{
+  float: right;
+  top: 200px;
+  z-index: 2;
+  -webkit-animation: vibrate-3 0.5s linear infinite both;
+  	        animation: vibrate-3 0.5s linear infinite both;
+}
+@-webkit-keyframes vibrate-3 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  30% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  70% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  90% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-3 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  30% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  70% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  90% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+
+.gambar2{
+  float: left;
+  top: 200px;
+  z-index: 2;
+  -webkit-animation: bounce-bottom 2s both;
+	        animation: bounce-bottom 2s both;
+}
+@-webkit-keyframes bounce-bottom {
+  0% {
+    -webkit-transform: translateY(45px);
+            transform: translateY(45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(24px);
+            transform: translateY(24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-bottom {
+  0% {
+    -webkit-transform: translateY(45px);
+            transform: translateY(45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(24px);
+            transform: translateY(24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+.gambar3{
+  top: 200px;
+  z-index: 1;
+}
+.sliede{
+  top: 0px;
+  z-index: -1;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class= "li">
+  <li><a href="https://store.ubi.com/sea/tom-clancy‘s-rainbow-six-siege-ultimate-edition/5c586c7d29e123fd15c55bc6.html?lang=en_SG">Play</a></li>
+
+  <li><a href="https://rainbow6.ubisoft.com/siege/en-us/player-activities/index.aspx">Achievment</a></li>
+
+  <li><a href="https://connect.ubisoft.com/login?appId=685a3038-2b04-47ee-9c5a-6403381a46aa&lang=en-US&nextUrl=https%3A%2F%2Foverlay.ubisoft.com%2Foverlay-connect-integration%2Flogged-in.html&genomeId=f9224c7b-01b4-4a68-ad4f-98ede78ef225">Setting</a></li>
+
+  <li><a href="https://rainbow6.ubisoft.com/siege/en-us/home/index.aspx">About Us</a></li>
+</div>
+<div class="gambar2">
+  <a href="https://www.youtube.com/channel/UCWKHac5bjhsUtSnMDFCT-7A">
+  <img src="https://icon-library.net/images/youtube-icon-white/youtube-icon-white-17.jpg" height="100px">
+</a>
+</div>
+<div class="gambar">
+  <a href="https://www.ubisoft.com/en-us/">
+    <img src="https://i.ytimg.com/vi/x3NSmxhVqdo/hqdefault.jpg" height="100px">
+  </a>
+</div>
+<div class="gambar3">
+  <a href="lolol.html">
+    <img src="https://data1.origin.com/asset/content/dam/originx/web/app/games/tom-clancy/tom-clancys-rainbow-six-siege/Year4Update/R6S_logo_800x400_en_US.png/b5102228-bfba-4b52-84ee-cab43d164c06/original.png" height="100px" width="250px">
+  </a>
+</div>
+<div class="sliede">
+  <img class="mySlides" src="https://i.redd.it/ofpvlld28g2z.jpg"
+  style="width:100%">
+  <img class="mySlides" src="https://i.redd.it/ai9wpt8jrw7y.png"
+  style="width:100%">
+  <img class="mySlides" src="https://www.videogameschronicle.com/files/2019/06/rainbow-six-siege-year-3-pass.jpg"
+  style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+
+</html>
